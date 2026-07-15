@@ -46,6 +46,10 @@
         padding: 1.25rem;
       }
 
+      nav { display: flex; justify-content: flex-start; gap: 1.25rem; margin-bottom: 1rem; padding: 0 0.5rem; }
+      nav a { color: var(--ink); font-size: 0.9rem; font-weight: 700; text-decoration: none; }
+      nav a:hover, nav a[aria-current="page"] { color: var(--primary); }
+
       .card {
         position: relative;
         overflow: hidden;
@@ -132,6 +136,11 @@
     <div class="orb orb--purple"></div>
     <div class="orb orb--mint"></div>
     <main>
+      <nav aria-label="Main navigation">
+        <a href="hello-world.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
       <section class="card" aria-labelledby="greeting">
         <div class="sparkle" aria-hidden="true">✦</div>
         <div class="accent" aria-hidden="true"></div>
